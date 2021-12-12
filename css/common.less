@@ -1,0 +1,152 @@
+.clearfl::after {
+  content: ""; /*设置内容为空*/
+  height: 0; /*高度为0*/
+  line-height: 0; /*行高为0*/
+  display: block; /*将文本转为块级元素*/
+  visibility: hidden; /*将元素隐藏*/
+  clear: both; /*清除浮动*/
+}
+//头部
+.top {
+  background-color: white;
+  .navbar-nav {
+    height: 84px;
+    & > li {
+      //子孙选择器（当下的子孙）
+      & > a {
+        line-height: 54px; //84-top:15-bottom:15=54px
+        color: black;
+      }
+    }
+  }
+
+  .navbar-header {
+    width: 100%;
+
+    .navbar-toggle {
+      border-color: #ddd; //伸缩盒子边框
+      .icon-bar {
+        background-color: #888;
+      }
+    }
+  }
+}
+
+.navbar-collapse.in {
+  overflow-y: unset; //取消内置滚动条
+}
+
+.carousel-inner .item img {
+  width: 100%;
+}
+
+.glyphicon-chevron-left::before {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.glyphicon-chevron-right::before {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  /*margin: 1px;*/
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff \9;
+  /*background-color: rgba(0, 0, 0, 0);*/
+  border: 1px solid grey;
+  border-radius: 1px;
+}
+.carousel-indicators .active {
+  width: 10px;
+  height: 2px;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid white; /*没有这边框，切换的时候指针不会变白 */
+}
+
+//尾部
+.op {
+  width: 100%;
+  height: 430px;
+  background-color: #e7e7e7;
+  .br {
+    margin: 0 auto;
+    width: 1355px;
+    height: 115px;
+    color: black;
+    .i {
+      width: 178px;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .with {
+      width: 240px;
+      margin-top: 30px;
+      margin-right: 140px;
+      .zixun {
+        margin-top: 45px;
+        p3 {
+          color: #666666;
+          font-weight: 900;
+          margin-left: 25px;
+        }
+        p {
+          margin-left: 25px;
+          font-size: 25px;
+        }
+      }
+    }
+    .this-code {
+      width: 178px;
+      margin-top: 30px;
+      margin-left: 85px;
+      .p {
+        margin-top: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  .ship {
+    margin: 0 200px;
+    margin-top: 70px;
+    width: 1200px;
+    color: #6b6b6b;
+    border-bottom: 1px #cccccc solid;
+  }
+  .put-on-records{
+    width: 1215px;
+    margin: 0 200px;
+    margin-top: 30px;
+   .law{
+
+     span{
+       float: left;
+     }
+     a{
+       float: right;
+     }
+   }
+  }
+}

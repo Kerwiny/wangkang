@@ -1,0 +1,198 @@
+.clearfl::after {
+  content: ""; /*设置内容为空*/
+  height: 0; /*高度为0*/
+  line-height: 0; /*行高为0*/
+  display: block; /*将文本转为块级元素*/
+  visibility: hidden; /*将元素隐藏*/
+  clear: both; /*清除浮动*/
+}
+
+.brand {
+  background-color: white;
+  .table-one {
+    width: 1330px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: flex;
+    .box-one {
+      padding-top: 42px;
+      padding-left: 52px;
+      width: 600px;
+      background-image: url(/images/background-img-one.png);
+      color: white;
+      .p1 {
+        text-align: left;
+        width: 460px;
+        display: block;
+        height: 190px;
+        line-height: 30px;
+      }
+      .box-two {
+        width: 508px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        .continue {
+          width: 175px;
+          border: white 2px solid;
+          color: white;
+          text-align: center;
+          .ul {
+            display: flex;
+            justify-content: space-around;
+            line-height: 45px;
+          }
+        }
+      }
+    }
+    .box-tree {
+      width: 730px;
+      display: flex;
+      justify-content: center;
+      .ul-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 360px;
+
+        .min-gray {
+          border: white solid 3px;
+          background-color: #d9d9d9;
+          a {
+            display: flex;
+
+            color: #666666;
+            //未访问时的状态(鼠标点击前显示的状态)
+            &:link {
+              color: #666666;
+            }
+            //鼠标悬停时的状态
+            &:hover {
+              color: #00a2a2;
+            }
+            p {
+              display: block;
+              margin-left: 40px;
+              font-size: 25px;
+              line-height: 115px;
+            }
+          }
+          a {
+            &:hover {
+              border: #00a2a2;
+            }
+            div-circle {
+              line-height: 115px;
+              .circle {
+                color: black;
+                width: 5px;
+                height: 5px;
+                background-color: transparent;
+                border: #e60a0a 3px solid;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.recommend {
+  background-color: #ecf0f3;
+  .title {
+    padding-top: 45px;
+    padding-bottom:54px ;
+    margin: 0 auto;
+    width: 90px;
+    text-align: center;
+    color: #333333;
+  }
+  .things {
+    width: 1400px;
+    margin: 0 auto;
+    .thing {
+      width: 320px;
+      padding-top: 25px;
+      margin-left: 25px;
+      height: 335px;
+      background-color: #ffffff;
+
+      .thing-img{
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.contact{
+  background-color: #ffffff;
+  .title {
+    padding-top: 45px;
+    padding-bottom:54px ;
+    margin: 0 auto;
+    width: 90px;
+    text-align: center;
+    color: #333333;
+  }
+  .board{
+    width: 1330px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-bottom: 65px;
+    .left{
+      width: 545px;
+      background-image: url(/images/left.jpg);
+      padding-left:60px;
+      padding-top: 45px;
+      p{
+        line-height: 30px;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+
+    .right{
+      background-color: #ffffff;
+      width: 600px;
+      .up{
+        display: flex;
+        justify-content: space-around;
+        .up-img{
+          width: 30%;
+        }
+        .up-word{
+
+        }
+      }
+      .down{
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-around;
+        .down-img{
+            width: 30%;
+        }
+        .down-word{
+
+        }
+      }
+    }
+  }
+}
+
+.partnership{
+  background-image: url(/images/grid.jpg);
+  .title -part{
+    padding-top: 45px;
+    padding-bottom:54px ;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    color: #333333;
+  }
+
+}
